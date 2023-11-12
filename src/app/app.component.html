@@ -177,7 +177,7 @@
   }
 </style>
 
-<main class="main">
+<!-- <main class="main">
   <div class="content">
     <div class="left-side">
       <svg
@@ -322,8 +322,11 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
 
+<app-users [users]="usersList" (onClickEmit)="handleClick($event)"/>
+
+<p>The clicked user is {{ userClicked }}</p>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
