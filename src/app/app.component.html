@@ -324,16 +324,11 @@
   </div>
 </main> -->
 
-<app-users [users]="usersList" (onClickEmit)="handleClick($event)"/>
-
-<p>The clicked user is {{ userClicked }}</p>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
+<!-- <app-users [users]="usersList" (onClickEmit)="handleClick($event)"/> -->
+<!-- <p>The clicked user is {{ userClicked }}</p> -->
+<nav>
+  <a routerLink="/home">Home</a>
+  |
+  <a routerLink="/user">Users</a>
+</nav>
 <router-outlet></router-outlet>
